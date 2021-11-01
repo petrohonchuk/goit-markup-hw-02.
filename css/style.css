@@ -1,1 +1,13 @@
 
+/* color web - #2196F3;*/
+/* color buttons - #2196F3;*/
+/* color text black - #212121;*/
+/* color text no black - #757575;*/
+/* background section: #2F303A;*/
+
+:root {
+    -- accent-color: #2196F3;--
+    -- title-text-color:  #212121;--
+    -- primary-text-color: rgba(255, 255, 255, 0.6);
+     -- primary-white-color: #FFFFFF;
+}
