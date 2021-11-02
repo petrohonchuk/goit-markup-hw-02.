@@ -10,7 +10,6 @@
   --primary-text-color: #757575;
   --primary-white-color: #ffffff;
 }
-
 body {
   background-color: var(--primary-white-color);
   color: var(--title-text-color);
@@ -20,9 +19,10 @@ body {
 ul {
   list-style: none;
 }
-
-/*footer*/
-
+.logo-web {
+  color: var(--accent-color);
+}
+/*header*/
 .logo {
   font-family: Raleway;
   cursor: pointer;
@@ -43,43 +43,37 @@ ul {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-
 /*contacts*/
-
 .mail {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
 .tell {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
 .contacts .tell:hover,
 .contacts .mail:hover {
   color: var(--accent-color);
 }
+/*hero-setion*/
+.hero-section {
+}
 /*hero*/
-
 .hero-title {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -88,13 +82,11 @@ ul {
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
-
 .hero-button {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   display: flex;
   align-items: center;
   text-align: center;
@@ -102,19 +94,16 @@ ul {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-
 /*our qualities section*/
-
 .our-qualities-title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 .qualities {
   font-family: Roboto;
   font-style: normal;
@@ -124,15 +113,76 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
 /*what-we-do section*/
-.what-we-do {
+.what-we-do,
+.comand {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+/*comand*/
+.comand-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.profesion {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/*footer*/
+.adress {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+/*portfolio*/
+.portfolio-button-section {
+}
+.portfolio-button-section .portfolio-button {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+.portfolio-card-section {
+}
+.portfolio-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-title-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
