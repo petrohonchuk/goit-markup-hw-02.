@@ -2,13 +2,24 @@
 /* color buttons - #2196F3;*/
 /* color text black - #212121;*/
 /* color text no black - #757575;*/
-/* background section: #2F303A;*/
+/* background section: #2F303A;
+
+#F5F4FA;*/
+
+html {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 :root {
   --accent-color: #2196f3;
   --title-text-color: #212121;
   --primary-text-color: #757575;
   --primary-white-color: #ffffff;
+  --color-portfolio-button: #f5f4fa;
 }
 body {
   background-color: var(--primary-white-color);
@@ -16,14 +27,16 @@ body {
   font-family: Montserrat, sans-serif;
   letter-spacing: 0.06em;
 }
+
 ul {
   list-style: none;
 }
 .logo-web {
   color: var(--accent-color);
 }
-/*header*/
+/*-------------------------------header-----------------------------*/
 .logo {
+  text-decoration: none;
   font-family: Raleway;
   cursor: pointer;
   color: var(--title-text-color);
@@ -31,11 +44,10 @@ ul {
   line-height: 1.42;
   letter-spacing: 0.03em;
 }
-.logo:hover {
-  color: var(--accent-color);
-}
+
 /*site-nav*/
-.site-nav .link {
+.header .header-nav .header-nav-list .link {
+  text-decoration: none;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -43,12 +55,13 @@ ul {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header .header-nav .header-nav-list .link:hover,
+.header .header-nav .header-nav-list .link:focus {
   color: var(--accent-color);
 }
 /*contacts*/
 .mail {
+  text-decoration: none;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -57,6 +70,7 @@ ul {
   color: var(--primary-text-color);
 }
 .tell {
+  text-decoration: none;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -68,6 +82,7 @@ ul {
 .contacts .mail:hover {
   color: var(--accent-color);
 }
+/*----------------------------main-------------------------------*/
 /*hero-setion*/
 .hero-section {
 }
@@ -83,17 +98,29 @@ ul {
   color: var(--primary-text-color);
 }
 .hero-button {
+  display: inline-block;
+  border: 2px;
+  border-color: var(--accent-color);
+  border-radius: 4px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
 }
+
 /*our qualities section*/
 .our-qualities-title {
   font-family: Roboto;
@@ -137,7 +164,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-/*footer*/
+/*------------------------------------footer---------------------------------*/
 .adress {
   font-family: Roboto;
   font-size: 14px;
@@ -145,18 +172,27 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
-/*portfolio*/
+/*-------------------------------------------------portfolio--------------------------*/
+/*main*/
 .portfolio-button-section {
 }
-.portfolio-button-section .portfolio-button {
+.portfolio-button {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: var(--accent-color);
+  background-color: var(--color-portfolio-button);
+  color: var(--title-text-color);
+  border: var(--color-portfolio-button);
+  border-radius: 4px;
+}
+
+.main .portfolio-button-section .portfolio-button:hover,
+.main .portfolio-button-section .portfolio-button:hover {
   color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 .portfolio-card-section {
 }
