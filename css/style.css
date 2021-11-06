@@ -97,7 +97,6 @@ ul {
 /*our qualities section*/
 .our-qualities-title {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -106,8 +105,6 @@ ul {
 }
 .qualities {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -117,7 +114,6 @@ ul {
 .what-we-do,
 .comand {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -128,7 +124,6 @@ ul {
 /*comand*/
 .comand-title {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -137,8 +132,6 @@ ul {
 }
 .profesion {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -147,8 +140,6 @@ ul {
 /*footer*/
 .adress {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -179,8 +170,6 @@ ul {
 }
 .portfolio-title-text {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
