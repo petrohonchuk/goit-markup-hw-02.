@@ -9,6 +9,7 @@
 html {
   box-sizing: border-box;
 }
+*,
 *::before,
 *::after {
   box-sizing: inherit;
@@ -20,11 +21,12 @@ html {
   --primary-text-color: #757575;
   --primary-white-color: #ffffff;
   --color-portfolio-button: #f5f4fa;
+  --color-hero-end-footer: #2f303a;
 }
 body {
   background-color: var(--primary-white-color);
   color: var(--title-text-color);
-  font-family: Montserrat, sans-serif;
+  font-family: Roboto, sans-serif;
   letter-spacing: 0.06em;
 }
 
@@ -38,7 +40,6 @@ ul {
 .logo {
   text-decoration: none;
   font-family: Raleway;
-  cursor: pointer;
   color: var(--title-text-color);
   font-size: 26px;
   line-height: 1.42;
@@ -48,7 +49,6 @@ ul {
 /*site-nav*/
 .header .header-nav .header-nav-list .link {
   text-decoration: none;
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -62,7 +62,7 @@ ul {
 /*contacts*/
 .mail {
   text-decoration: none;
-  font-family: Roboto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -71,7 +71,7 @@ ul {
 }
 .tell {
   text-decoration: none;
-  font-family: Roboto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -85,10 +85,10 @@ ul {
 /*----------------------------main-------------------------------*/
 /*hero-setion*/
 .hero-section {
+  background-color: var(--color-hero-end-footer);
 }
 /*hero*/
 .hero-title {
-  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -102,7 +102,7 @@ ul {
   border: 2px;
   border-color: var(--accent-color);
   border-radius: 4px;
-  font-family: Roboto;
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -111,19 +111,21 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: var(--title-text-color);
+  background-color: var(--color-portfolio-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
   width: 200px;
   height: 50px;
   left: 700px;
   top: 430px;
 }
+.hero-button:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
 
 /*our qualities section*/
 .our-qualities-title {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -131,7 +133,6 @@ ul {
   text-transform: uppercase;
 }
 .qualities {
-  font-family: Roboto;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -140,7 +141,6 @@ ul {
 /*what-we-do section*/
 .what-we-do,
 .comand {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -150,7 +150,6 @@ ul {
 }
 /*comand*/
 .comand-title {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -158,7 +157,6 @@ ul {
   color: var(--title-text-color);
 }
 .profesion {
-  font-family: Roboto;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -166,7 +164,6 @@ ul {
 }
 /*------------------------------------footer---------------------------------*/
 .adress {
-  font-family: Roboto;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -177,7 +174,6 @@ ul {
 .portfolio-button-section {
 }
 .portfolio-button {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -187,6 +183,9 @@ ul {
   color: var(--title-text-color);
   border: var(--color-portfolio-button);
   border-radius: 4px;
+  cursor: pointer;
+  width: 84px;
+  height: 26px;
 }
 
 .main .portfolio-button-section .portfolio-button:hover,
@@ -197,7 +196,6 @@ ul {
 .portfolio-card-section {
 }
 .portfolio-title {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -205,7 +203,6 @@ ul {
   color: var(--title-text-color);
 }
 .portfolio-title-text {
-  font-family: Roboto;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
