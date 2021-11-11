@@ -37,6 +37,9 @@ ul {
   color: var(--accent-color);
 }
 /*-------------------------------header-----------------------------*/
+.header {
+  background-color: rosybrown;
+}
 .logo {
   text-decoration: none;
   font-family: Raleway;
@@ -60,6 +63,11 @@ ul {
   color: var(--accent-color);
 }
 /*contacts*/
+
+.contacts {
+  margin: 0;
+  padding: 0;
+}
 .mail {
   text-decoration: none;
 
@@ -96,6 +104,8 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
 }
 .hero-button {
   display: inline-block;
@@ -106,25 +116,34 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
   background-color: var(--color-portfolio-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  width: 200px;
+  min-width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
 }
+
+.span-button {
+  padding: 10px 32px 10px 32px;
+}
+
 .hero-section .hero-button:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-/*our qualities section*/
+/*----------------------------------------our qualities section------------------------------*/
+/*скрывае заголовок наши качества*/
+.our-qualities {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  line-height: 0;
+}
 .our-qualities-title {
   font-weight: 700;
   font-size: 14px;
@@ -174,6 +193,7 @@ ul {
 .portfolio-button-section {
 }
 .portfolio-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -184,6 +204,9 @@ ul {
   border: var(--color-portfolio-button);
   border-radius: 4px;
   cursor: pointer;
+  min-width: 73px;
+  height: 30px;
+  margin: 6px 22px;
 }
 
 .main .portfolio-button-section .portfolio-button:hover,
@@ -205,4 +228,7 @@ ul {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.portfolio-link {
+  text-decoration: none;
 }
