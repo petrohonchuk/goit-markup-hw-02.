@@ -7,6 +7,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+.section {
+  padding: 94px;
+}
 
 :root {
   --accent-color: #2196f3;
@@ -103,7 +106,7 @@ button {
 }
 /*contacts*/
 
-.contacts {
+.header .contacts {
   display: flex;
 }
 .mail,
@@ -147,7 +150,7 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  /* text-align: center; */
+
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -155,24 +158,17 @@ button {
   padding: 10px 30px;
   display: block;
   margin: 0 auto;
-  /* min-width: 200px;
-  height: 50px; */
 }
 
-/* .span-button {
-  padding: 10px 32px 10px 32px;
-} */
 .hero-section .hero-button:focus,
 .hero-section .hero-button:hover {
-  /* color: var(--primary-white-color); */
   background-color: var(--bg-hover-button);
 }
 
 /*----------------------------------------our qualities section------------------------------*/
-/*скрывае заголовок наши качества*/
+
 .our-qualities-section {
-  /* border: 2px solid red; */
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 .our-qualities-list {
@@ -186,7 +182,7 @@ button {
 .our-qualities-section ul li:last-child {
   margin-right: 0;
 }
-
+/*скрывае заголовок наши качества*/
 .our-qualities {
   width: 1px;
   height: 1px;
@@ -210,7 +206,7 @@ button {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-/*what-we-do section*/
+/*---------------------------------what-we-do section----------------------------*/
 .what-we-do {
   margin-bottom: 50px;
   margin-top: 94px;
@@ -247,17 +243,18 @@ button {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-/*team*/
+/*---------------------------------team-------------------------*/
 .team-section {
   max-width: 1600px;
-  height: 648px;
+  /* height: 648px; */
   /* border: 2px solid green; */
   margin: 0 auto;
   background-color: #f5f4fa;
+  padding: 94px 215px;
 }
-.team-container {
-  margin: 0 215px;
-}
+/* .team-container {
+  width: 1200px;
+} */
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -276,7 +273,7 @@ button {
   margin-right: 0px;
 }
 .team {
-  margin: 94px auto 50px;
+  margin-bottom: 50px;
 }
 .team-title {
   font-weight: 500;
@@ -296,12 +293,11 @@ button {
 
 /*------------------------------------footer---------------------------------*/
 .footer {
-  max-width: 1600px;
+  width: 1600px;
+  height: 252px;
   background-color: var(--color-hero-end-footer);
   margin: 0 auto;
   padding: 60px 0;
-
-  /* min-height: auto; */
 }
 .footer-container {
   margin-left: 215px;
@@ -340,12 +336,36 @@ button {
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
 }
-.contacts {
+.footer .contacts {
+  display: flex;
+  flex-direction: column;
 }
+.footer-tell {
+  margin-top: 9px;
+}
+.studio-span {
+  color: var(--primary-white-color);
+}
+
 /*-------------------------------------------------portfolio--------------------------*/
+
 /*main*/
-.portfolio-button-section {
+.portfolio-link {
+  text-decoration: none;
 }
+.title-list {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  margin-left: -1;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio-button {
   font-family: inherit;
   font-weight: 500;
@@ -358,17 +378,40 @@ button {
   border: var(--color-portfolio-button);
   border-radius: 4px;
   cursor: pointer;
-  min-width: 73px;
-  height: 30px;
-  margin: 6px 22px;
+  padding: 6px 22px;
 }
-
-.main .portfolio-button-section .portfolio-button:hover,
-.main .portfolio-button-section .portfolio-button:hover {
+.btn li {
+  margin: 94px 8px 50px 0;
+}
+.btn :last-child {
+  margin-right: 0;
+}
+.portfolio-button:hover,
+.portfolio-button:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-.portfolio-card-section {
+.portfolio-container {
+}
+.card-section {
+  padding-left: 215px;
+  padding-right: 215px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.card-section-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-section-ul .item {
+  width: calc((100% - 60px) / 3);
+  margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  min-width: 370px;
 }
 .portfolio-title {
   font-weight: 700;
@@ -376,12 +419,15 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-top: 20px;
+  margin-left: 24px;
 }
 .portfolio-title-text {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-}
-.portfolio-link {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
